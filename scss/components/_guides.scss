@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as vars;
+
+.grid-guides {
+  opacity: vars.$guide-opacity;
+
+  .guide-row { height: vars.$guide-height; }
+
+  .guide-column {
+    background-color: vars.$surface-color;
+    border-right: 1px solid vars.$guide-border-color;
+
+    &:first-child {
+      border-left: 1px solid vars.$guide-border-color;
+    }
+  }
+}

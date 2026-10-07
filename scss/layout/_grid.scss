@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as vars;
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: vars.$default-row-height;
+}
+
+.gridcontent {
+  width: vars.$column-width;
+  margin: 0;
+  border-right: 1px solid vars.$grid-border-color;
+  height: 100%;
+  float: left;
+  background-color: vars.$grid-background;
+}
+
+.layout-overlay {
+  position: absolute;
+  opacity: vars.$overlay-opacity;
+  width: auto;
+  left: vars.$overlay-left;
+  right: vars.$overlay-right;
+}
+
+.header-row { height: vars.$header-height; }
+.content-row { height: vars.$content-height; }
+.footer-row { height: vars.$footer-height; }

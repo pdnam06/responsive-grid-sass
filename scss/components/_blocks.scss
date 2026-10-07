@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins";
+
+.header-block { @include mixins.full-row(vars.$header-color); }
+.footer-block { @include mixins.full-row(vars.$footer-color); }
+.blank-column { @include mixins.surface-column; }
+
+.menu-column,
+.aside-column {
+  @include mixins.surface-column;
+  width: vars.$wide-column-width;
+  padding-top: vars.$column-padding-top;
+}
+
+.menu-item {
+  @include mixins.blue-panel(vars.$menu-item-height);
+  margin-bottom: vars.$menu-gap;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aside-panel { @include mixins.blue-panel(vars.$aside-panel-height); }

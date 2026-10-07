@@ -1,0 +1,4 @@
+PASS 1440px: all 34 divs match original geometry and styles; no inline CSS or overflow
+PASS 768px: all 34 divs match original geometry and styles; no inline CSS or overflow
+PASS 390px: all 34 divs match original geometry and styles; no inline CSS or overflow
+PASS 320px: all 34 divs match original geometry and styles; no inline CSS or overflow

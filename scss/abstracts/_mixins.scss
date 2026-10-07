@@ -1,0 +1,19 @@
+@use "variables" as vars;
+
+@mixin full-row($color) {
+  width: 100%;
+  background: $color;
+  border-right-color: transparent;
+}
+
+@mixin surface-column {
+  background-color: vars.$surface-color;
+  border: none;
+}
+
+@mixin blue-panel($height) {
+  background-color: vars.$panel-color;
+  border: none;
+  width: 100%;
+  height: $height;
+}
